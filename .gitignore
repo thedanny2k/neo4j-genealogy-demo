@@ -1,0 +1,6 @@
+aura.env
+*.env
+!aura.env.example
+__pycache__/
+.venv/
+.DS_Store

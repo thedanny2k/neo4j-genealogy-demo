@@ -1,0 +1,362 @@
+{
+  "counts": {
+    "Lot": 3049,
+    "Cell": 1484,
+    "Intermediate": 1429,
+    "Package": 50,
+    "RawMaterial": 86,
+    "Equipment": 111,
+    "Location": 185,
+    "USED_IN": 11832,
+    "PROCESSED_ON": 26192,
+    "STORED_AT": 7665,
+    "Cohort": 6,
+    "IN_COHORT": 340,
+    "total_nodes": 3351,
+    "total_relationships": 46029
+  },
+  "units": [
+    {
+      "lot_id": "A2611-000264",
+      "ancestor_count": 24,
+      "raw_lot_count": 13,
+      "raw_lots": [
+        "ALF-J-260305-0002",
+        "BND-D-260228-0001",
+        "CAD-C-260228-0001",
+        "CAM-A-260305-0003",
+        "CUF-L-260306-0002",
+        "PCH-N-260303-0001",
+        "SBD-D-260227-0001",
+        "SBD-D-260307-0002",
+        "SOL-E-260305-0003",
+        "SPP-H-260228-0001",
+        "SPP-H-260304-0002",
+        "SPP-H-260305-0003",
+        "TAB-M-260301-0001"
+      ],
+      "max_depth": 7,
+      "equipment_count": 38,
+      "own_storage_in_order": [
+        "FORM-ROOM:RACK-11",
+        "AGING-ROOM:RACK-11",
+        "BACKEND-STAGING",
+        "FG-WH:RACK-24"
+      ]
+    },
+    {
+      "lot_id": "A2614-001104",
+      "ancestor_count": 20,
+      "raw_lot_count": 14,
+      "raw_lots": [
+        "ALF-J-260326-0005",
+        "ALF-J-260331-0006",
+        "BND-D-260320-0003",
+        "CAD-C-260331-0004",
+        "CAM-A-260328-0011",
+        "CAM-A-260331-0012",
+        "CUF-L-260330-0004",
+        "PCH-N-260324-0003",
+        "PRM-K-260330-0002",
+        "SBD-D-260329-0005",
+        "SOL-E-260326-0009",
+        "SOL-E-260330-0010",
+        "SPP-G-260331-0011",
+        "TAB-M-260324-0003"
+      ],
+      "max_depth": 4,
+      "equipment_count": 35,
+      "own_storage_in_order": [
+        "FORM-ROOM:RACK-04",
+        "AGING-ROOM:RACK-23",
+        "BACKEND-STAGING",
+        "FA-LAB"
+      ]
+    },
+    {
+      "lot_id": "B2613-000686",
+      "ancestor_count": 42,
+      "raw_lot_count": 19,
+      "raw_lots": [
+        "ALF-J-260317-0004",
+        "BND-D-260310-0002",
+        "CAD-C-260316-0003",
+        "CAM-A-260316-0007",
+        "CAM-B-260319-0008",
+        "CUF-L-260318-0003",
+        "PCH-P-260311-0002",
+        "PRM-K-260319-0001",
+        "SBD-D-260315-0003",
+        "SOL-E-260316-0006",
+        "SOL-E-260319-0007",
+        "SPP-G-260310-0004",
+        "SPP-G-260312-0005",
+        "SPP-G-260314-0006",
+        "SPP-G-260317-0007",
+        "SPP-H-260228-0001",
+        "SPP-H-260304-0002",
+        "SPP-H-260305-0003",
+        "TAB-M-260314-0002"
+      ],
+      "max_depth": 19,
+      "equipment_count": 42,
+      "own_storage_in_order": [
+        "FORM-ROOM:RACK-01",
+        "AGING-ROOM:RACK-05",
+        "BACKEND-STAGING",
+        "REL-LAB:CYCLER-15"
+      ]
+    }
+  ],
+  "lots": [
+    {
+      "lot_id": "CAM-B-260319-0008",
+      "descendant_count": 182,
+      "cells": 133,
+      "shipments": [
+        "SHP-00004"
+      ]
+    },
+    {
+      "lot_id": "PCH-P-260311-0002",
+      "descendant_count": 475,
+      "cells": 455,
+      "shipments": [
+        "SHP-00002",
+        "SHP-00003",
+        "SHP-00004"
+      ]
+    }
+  ],
+  "batch": {
+    "batch": "BLD-A-260307-A",
+    "cells": [
+      "A2610-000104",
+      "A2610-000105",
+      "A2610-000106",
+      "A2610-000107",
+      "A2610-000108",
+      "A2610-000109",
+      "A2610-000111",
+      "A2610-000112",
+      "A2610-000113",
+      "A2610-000114",
+      "A2610-000115",
+      "A2610-000116"
+    ]
+  },
+  "api_examples": [
+    {
+      "lot_id": "A2611-000264",
+      "direction": "ancestors",
+      "depth": 2,
+      "nodes": 9,
+      "edges": 8
+    },
+    {
+      "lot_id": "A2611-000264",
+      "direction": "ancestors",
+      "depth": null,
+      "nodes": 25,
+      "edges": 28
+    },
+    {
+      "lot_id": "CAM-B-260319-0008",
+      "direction": "descendants",
+      "depth": 3,
+      "nodes": 44,
+      "edges": 43
+    }
+  ],
+  "commonality": [
+    {
+      "scenario": 1,
+      "suspects": 46,
+      "controls": 138,
+      "top": [
+        {
+          "kind": "raw_lot",
+          "value": "CAM-B-260319-0008",
+          "suspect_pct": 100.0,
+          "control_pct": 31.2,
+          "diff_pts": 68.8
+        },
+        {
+          "kind": "location",
+          "value": "WH-RAW:A-07",
+          "suspect_pct": 100.0,
+          "control_pct": 50.7,
+          "diff_pts": 49.3
+        },
+        {
+          "kind": "raw_lot",
+          "value": "SOL-E-260319-0007",
+          "suspect_pct": 100.0,
+          "control_pct": 50.7,
+          "diff_pts": 49.3
+        },
+        {
+          "kind": "location",
+          "value": "WH-RAW:B-14",
+          "suspect_pct": 100.0,
+          "control_pct": 65.2,
+          "diff_pts": 34.8
+        },
+        {
+          "kind": "equipment",
+          "value": "CUTTER-01",
+          "suspect_pct": 71.7,
+          "control_pct": 44.2,
+          "diff_pts": 27.5
+        },
+        {
+          "kind": "raw_lot",
+          "value": "SBD-D-260315-0003",
+          "suspect_pct": 97.8,
+          "control_pct": 71.0,
+          "diff_pts": 26.8
+        },
+        {
+          "kind": "location",
+          "value": "WH-RAW:C-14",
+          "suspect_pct": 100.0,
+          "control_pct": 73.9,
+          "diff_pts": 26.1
+        },
+        {
+          "kind": "raw_lot",
+          "value": "PRM-K-260319-0001",
+          "suspect_pct": 100.0,
+          "control_pct": 73.9,
+          "diff_pts": 26.1
+        }
+      ]
+    },
+    {
+      "scenario": 2,
+      "suspects": 18,
+      "controls": 54,
+      "top": [
+        {
+          "kind": "equipment",
+          "value": "FURNACE-03",
+          "suspect_pct": 94.4,
+          "control_pct": 27.8,
+          "diff_pts": 66.7
+        },
+        {
+          "kind": "equipment",
+          "value": "MIXER-01",
+          "suspect_pct": 100.0,
+          "control_pct": 59.3,
+          "diff_pts": 40.7
+        },
+        {
+          "kind": "location",
+          "value": "WH-RAW:B-16",
+          "suspect_pct": 100.0,
+          "control_pct": 64.8,
+          "diff_pts": 35.2
+        },
+        {
+          "kind": "raw_lot",
+          "value": "CAM-B-260321-0009",
+          "suspect_pct": 100.0,
+          "control_pct": 64.8,
+          "diff_pts": 35.2
+        },
+        {
+          "kind": "equipment",
+          "value": "COATER-01",
+          "suspect_pct": 66.7,
+          "control_pct": 31.5,
+          "diff_pts": 35.2
+        },
+        {
+          "kind": "equipment",
+          "value": "DRYER-01",
+          "suspect_pct": 66.7,
+          "control_pct": 31.5,
+          "diff_pts": 35.2
+        },
+        {
+          "kind": "location",
+          "value": "WH-RAW:A-12",
+          "suspect_pct": 94.4,
+          "control_pct": 61.1,
+          "diff_pts": 33.3
+        },
+        {
+          "kind": "raw_lot",
+          "value": "SPP-G-260322-0008",
+          "suspect_pct": 94.4,
+          "control_pct": 61.1,
+          "diff_pts": 33.3
+        }
+      ]
+    },
+    {
+      "scenario": 3,
+      "suspects": 21,
+      "controls": 63,
+      "top": [
+        {
+          "kind": "location",
+          "value": "DRYROOM-B:RACK-07",
+          "suspect_pct": 95.2,
+          "control_pct": 33.3,
+          "diff_pts": 61.9
+        },
+        {
+          "kind": "location",
+          "value": "WH-RAW:A-02",
+          "suspect_pct": 95.2,
+          "control_pct": 46.0,
+          "diff_pts": 49.2
+        },
+        {
+          "kind": "raw_lot",
+          "value": "SPP-G-260331-0011",
+          "suspect_pct": 95.2,
+          "control_pct": 46.0,
+          "diff_pts": 49.2
+        },
+        {
+          "kind": "location",
+          "value": "WH-RAW:C-16",
+          "suspect_pct": 85.7,
+          "control_pct": 36.5,
+          "diff_pts": 49.2
+        },
+        {
+          "kind": "raw_lot",
+          "value": "CAM-A-260331-0012",
+          "suspect_pct": 81.0,
+          "control_pct": 31.7,
+          "diff_pts": 49.2
+        },
+        {
+          "kind": "raw_lot",
+          "value": "SOL-E-260330-0010",
+          "suspect_pct": 76.2,
+          "control_pct": 33.3,
+          "diff_pts": 42.9
+        },
+        {
+          "kind": "equipment",
+          "value": "FURNACE-02",
+          "suspect_pct": 57.1,
+          "control_pct": 14.3,
+          "diff_pts": 42.9
+        },
+        {
+          "kind": "location",
+          "value": "WH-RAW:B-13",
+          "suspect_pct": 95.2,
+          "control_pct": 57.1,
+          "diff_pts": 38.1
+        }
+      ]
+    }
+  ]
+}
